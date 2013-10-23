@@ -1,0 +1,187 @@
+Last login: Wed Oct 16 20:45:40 on ttys000
+Waiyees-MacBook-Pro:~ waiyeechung$ 
+Waiyees-MacBook-Pro:~ waiyeechung$ 
+Waiyees-MacBook-Pro:~ waiyeechung$ cd fewd
+-bash: cd: fewd: No such file or directory
+Waiyees-MacBook-Pro:~ waiyeechung$ ls
+Applications	Documents	FEWD_HK_3	Google Drive	Movies		Pictures
+Desktop		Downloads	FontExplorer X	Library		Music		Public
+Waiyees-MacBook-Pro:~ waiyeechung$ pwd
+/Users/waiyeechung
+Waiyees-MacBook-Pro:~ waiyeechung$ ls
+Applications	Documents	FEWD_HK_3	Google Drive	Movies		Pictures
+Desktop		Downloads	FontExplorer X	Library		Music		Public
+Waiyees-MacBook-Pro:~ waiyeechung$ cd F
+FEWD_HK_3/      FontExplorer X/ 
+Waiyees-MacBook-Pro:~ waiyeechung$ cd F
+FEWD_HK_3/      FontExplorer X/ 
+Waiyees-MacBook-Pro:~ waiyeechung$ cd FEWD_HK_3/
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ pwd
+/Users/waiyeechung/FEWD_HK_3
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ cd ../
+Waiyees-MacBook-Pro:~ waiyeechung$ cd ../..
+Waiyees-MacBook-Pro:/ waiyeechung$ pwd
+/
+Waiyees-MacBook-Pro:/ waiyeechung$ git remote
+fatal: Not a git repository (or any of the parent directories): .git
+Waiyees-MacBook-Pro:/ waiyeechung$ cd f
+-bash: cd: f: No such file or directory
+Waiyees-MacBook-Pro:/ waiyeechung$ cd F
+-bash: cd: F: No such file or directory
+Waiyees-MacBook-Pro:/ waiyeechung$ ls
+Applications		User Information	cores			mach_kernel		tmp
+Library			Users			dev			net			usr
+Network			Volumes			etc			private			var
+System			bin			home			sbin
+Waiyees-MacBook-Pro:/ waiyeechung$ pwd
+/
+Waiyees-MacBook-Pro:/ waiyeechung$ cd
+Waiyees-MacBook-Pro:~ waiyeechung$ pwd
+/Users/waiyeechung
+Waiyees-MacBook-Pro:~ waiyeechung$ cd FEWD_HK_3/
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ pwd
+/Users/waiyeechung/FEWD_HK_3
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ git remote
+origin
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ git remote add upstream https://github.com/ga-students/FEWD_HK_3.git
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ git remote
+origin
+upstream
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ remote show upstream
+-bash: remote: command not found
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ git remote show upstream
+* remote upstream
+  Fetch URL: https://github.com/ga-students/FEWD_HK_3.git
+  Push  URL: https://github.com/ga-students/FEWD_HK_3.git
+  HEAD branch: gh-pages
+  Remote branches:
+    gh-pages new (next fetch will store in remotes/upstream)
+    master   new (next fetch will store in remotes/upstream)
+  Local ref configured for 'git push':
+    gh-pages pushes to gh-pages (local out of date)
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/imvenus/FEWD_HK_3.git
+  Push  URL: https://github.com/imvenus/FEWD_HK_3.git
+  HEAD branch: gh-pages
+  Remote branches:
+    gh-pages tracked
+    master   tracked
+  Local branch configured for 'git pull':
+    gh-pages merges with remote gh-pages
+  Local ref configured for 'git push':
+    gh-pages pushes to gh-pages (up to date)
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ git pull upstream gh-pages
+remote: Counting objects: 47, done.
+remote: Compressing objects: 100% (28/28), done.
+remote: Total 44 (delta 18), reused 37 (delta 12)
+Unpacking objects: 100% (44/44), done.
+From https://github.com/ga-students/FEWD_HK_3
+ * branch            gh-pages   -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ final/mart/readme.md                                      |   3 +
+ index.html                                                |   2 +-
+ lesson2/slides.md                                         | 412 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ lesson2/solutions/README.md                               |   9 ++
+ lesson2/solutions/Wendy_Bite_Solution/css/style.css       |  82 +++++++++++++
+ lesson2/solutions/Wendy_Bite_Solution/img/Betty-White.jpg | Bin 0 -> 15774 bytes
+ lesson2/solutions/Wendy_Bite_Solution/index.html          |  41 +++++++
+ lesson2/solutions/Wendy_Bite_Solution/resume.html         |  77 ++++++++++++
+ 8 files changed, 625 insertions(+), 1 deletion(-)
+ create mode 100644 final/mart/readme.md
+ create mode 100644 lesson2/slides.md
+ create mode 100644 lesson2/solutions/README.md
+ create mode 100644 lesson2/solutions/Wendy_Bite_Solution/css/style.css
+ create mode 100644 lesson2/solutions/Wendy_Bite_Solution/img/Betty-White.jpg
+ create mode 100644 lesson2/solutions/Wendy_Bite_Solution/index.html
+ create mode 100644 lesson2/solutions/Wendy_Bite_Solution/resume.html
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ git config --global user.name "imvenusC"
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ git config --global user.email "venuswaiyee@gmail.com"
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ git push
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Counting objects: 52, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (43/43), done.
+Writing objects: 100% (47/47), 14.87 KiB | 0 bytes/s, done.
+Total 47 (delta 20), reused 0 (delta 0)
+To https://github.com/imvenus/FEWD_HK_3.git
+   9ffb9a4..0235ae3  gh-pages -> gh-pages
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ git config --global user.name "venusC"
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ git config --global push.default simple
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ cd final/venus c
+-bash: cd: final/venus: No such file or directory
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ cd
+Waiyees-MacBook-Pro:~ waiyeechung$ homework
+-bash: homework: command not found
+Waiyees-MacBook-Pro:~ waiyeechung$ cd
+Waiyees-MacBook-Pro:~ waiyeechung$ cd F
+-bash: cd: F: No such file or directory
+Waiyees-MacBook-Pro:~ waiyeechung$ cd
+Waiyees-MacBook-Pro:~ waiyeechung$ pwd
+/Users/waiyeechung
+Waiyees-MacBook-Pro:~ waiyeechung$ pwd
+/Users/waiyeechung
+Waiyees-MacBook-Pro:~ waiyeechung$ cd FEWD_HK_3/
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ ls
+Cookie_receipt.sublime-project		final					lesson1
+Cookie_receipt.sublime-workspace	homework				lesson2
+README.md				index.html				slides
+assets					intro
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ git status
+# On branch gh-pages
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	Cookie_receipt.sublime-project
+#	Cookie_receipt.sublime-workspace
+#	homework/week1/resume/
+#	lesson1/solutions/cookie_recipe/cookie_recipt_index.html
+#	lesson1/starter_code/cookie_recipe/style.css
+#	lesson2/notes/
+nothing added to commit but untracked files present (use "git add" to track)
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ git add .
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ git status
+# On branch gh-pages
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   Cookie_receipt.sublime-project
+#	new file:   Cookie_receipt.sublime-workspace
+#	new file:   homework/week1/resume/index.html
+#	new file:   homework/week1/resume/style.css
+#	new file:   lesson1/solutions/cookie_recipe/cookie_recipt_index.html
+#	new file:   lesson1/starter_code/cookie_recipe/style.css
+#	new file:   lesson2/notes/Notes from week 2
+#
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ git commit -m "Im Venus wow not easy to be a geek"
+[gh-pages afe0891] Im Venus wow not easy to be a geek
+ 7 files changed, 404 insertions(+)
+ create mode 100644 Cookie_receipt.sublime-project
+ create mode 100644 Cookie_receipt.sublime-workspace
+ create mode 100644 homework/week1/resume/index.html
+ create mode 100644 homework/week1/resume/style.css
+ create mode 100644 lesson1/solutions/cookie_recipe/cookie_recipt_index.html
+ create mode 100644 lesson1/starter_code/cookie_recipe/style.css
+ create mode 100644 lesson2/notes/Notes from week 2
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ git push
+Counting objects: 25, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (18/18), 4.49 KiB | 0 bytes/s, done.
+Total 18 (delta 1), reused 0 (delta 0)
+To https://github.com/imvenus/FEWD_HK_3.git
+   0235ae3..afe0891  gh-pages -> gh-pages
+Waiyees-MacBook-Pro:FEWD_HK_3 waiyeechung$ 
