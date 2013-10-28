@@ -1,0 +1,118 @@
+<!--Temporary--
+font-family: 'Gudea', sans-serif;
+font-family: 'Share Tech', sans-serif;
+font-family: 'Flamenco', cursive;
+
+
+body {
+        font-family:'Belleza', sans-serif;
+        font-size: 12px;
+        line-height: 2;
+        margin: 10px 20px 30px 10px;
+        border: 3 px solid #777777;
+        border-color: #770000;
+        padding: 10px;
+        color: #767C80;
+        background-color:#ffffff;   
+}
+
+h1
+{
+		font-family:'Flamenco', cursive;
+        font-size: 36px;
+        line-height: 3;
+        width:400px;
+        height: 300px;
+        margin: 30px 40px 40px 30px;
+        border: 3 px solid #ffffff;
+        border-color: #770000;
+        padding: 5px;
+        color: #767C80;
+        background-color:#ffffff;   
+}
+		background-color:transparent;
+		color: #11F2A3;
+		text-align: Left;
+}
+h2
+{
+background-color:transparent;
+color: #A356E6;
+}
+
+nav{
+	font-family: 'Belleza', sans-serif;
+	font-size: 12px;
+        line-height: 2;
+        margin: 10px 20px 30px 10px;
+        border: 3 px solid #777777;
+        border-color: #770000;
+        padding: 10px;
+	background-color:#ffffff;
+	margin: 3px 4px 4px 3px;
+	color: #999999;
+	text-align: left;
+}
+
+}
+
+article{}
+
+h3 {
+	font-size: 18px;
+	color: #BBBBBB;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 42px;
+}
+}
+
+div
+{
+background-color:transparent;
+color: red;
+font-weight: bold;
+}
+
+div {
+border: solid;
+display: table-cell;
+width: 300px; 
+}
+div img {display: block;}
+
+<div>
+<img src="dog.jpg" alt="">
+</div>
+nav {
+        color: #120CC6;
+        text-align: center;
+}
+
+h4 {
+	font-weight: normal;
+	margin-bottom: 0;
+}
+p {
+	font-family: Georgia, serif;
+	margin-top: 0;
+	margin-bottom: 27px;
+
+hr {
+	border: none;
+	border-top: 1px solid #999999;
+	margin: 30px 0;
+}
+
+img {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #999999;
+	padding: 5px;
+}
+
+nav {
+	color: #999999;
+	text-align: center;
+}
