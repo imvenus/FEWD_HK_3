@@ -9,63 +9,164 @@ body {
 	margin: 0 auto;
 }
 
-header {
-	background-color: black;
-	border-bottom: 4px solid yellow;
-	margin: 0px;
+/* HEADERS */
+  header {
+  font-family: Arial;
+  background-color: black;
+  color: yellow;
+  padding: 20px 30px 20px 30px;
+  border-bottom: 4px solid yellow;
+  margin: 0px;
   height: 120px;
 }
+
+  /* MENU */
+
+nav {
+  float: right;
+  padding-right: 5px;
+  background-color: black;
+}
+
+a {
+  padding: 20px 5px; 
+  text-decoration: none;
+  background: black;
+  color: #FFFFFF;
+  position:right;
+  display: inline;
+  list-style: none;
+}
+a:hover { color: #AAA; }
+a:active { color: #99F; }
+  
+
+/* punchline */
 
 .punchline {
   margin: 0px auto;
   padding:10px 23px;
   background-color:grey;
   text-align: center; 
+  font-size: 24px;
+  
 }
+/* punchline line-through not working*/
+#line-through{
+  text-decoration: line-through;
+}  
 
+p em{
+  border-bottom: solid yellow;
+}
+ 
+/* Banner image */
+
+.imagebox{
+display:inline;}
+
+.bannerimage{
+  width: 75%;
+  height:auto;
+  margin: 0px
+  float: right;
+  }
+
+.transbox{
+  color: black;
+  width:350px;
+  height:390px;
+  margin:30px 50px;
+  background-color:#000000;
+  border:1px solid black;
+  background: rgba(0, 0, 0, .1);
+  float: right;
+  width:350px;}
+
+div.transbox h1
+  {
+
+  margin:30px 40px;
+  color:#FFCC00;
+  }
+
+div.transbox h2
+  {
+  margin:30px 40px;
+  color:#00CCDD;
+  }
+div.transbox h3
+  {
+  margin:30px 40px;
+  padding: 15px 30px;
+  color:#0C0F0E;
+  text-align: center;
+
+  }
+#button4
+  background-color: #33FF00;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border: 5px solid #009900;
+  padding: 5px;
+}
 /* TYPOGRAPHY */
 
-  /* HEADERS */
 
-h1 {
-  padding-top: 12px;
-  padding-left: 24px;
-	background: black;
-	color: yellow;
-  margin: 0;
-}
+
+
 
 /* ELEMENTS */
 
-li { 
-  display: inline;
-  list-style: none;
-  padding: 4px 8px;
-}
+
 
 /* LINKS */
 
 /*COMPONENTS*/
 
-  /* MENU */
-
-nav {
-	float: right;
-  padding-right: 24px;
-	background-color: black;
+.column1{
+  width:200px;
+  overflow:hidden;
+  margin:0px;
+  border: solid 5px black;
+  padding:0px;
+  background-color: transparent;
+  display:inline;
 }
 
-li a {
-  padding: 0px 10px; 
-  text-decoration: none;
-  background: black;
-  color: #EEEEEE;
-  position:right;
+#switcher li{
+  float: right;
+  width: 60px;
+  height: 40px;
+  margin: 3px 15px 15px 3px;
+  border-radius: 16px;
+  border: 0px solid black;
 }
 
-li a:hover { color: #AAA; }
+.column2{
+  width:200px;
+  display:inline-block;
+  overflow:hidden;
+  margin:1px;
+  border: solid 0px black;
+  border-left: solid 1px black;
+  padding:15px;
+  background-color: transparent;
+  float: right;
 
-li a:active { color: #99F; }
+}
+
+.column3{
+  width:200px;
+  display:inline-block;
+  overflow:hidden;
+  margin:1px;
+  border-left: solid 1px black;
+  padding:15px;
+  background-color: transparent;
+  float: right;
+  width: 30%;
+}
 
 /* HACKS */
 
@@ -76,4 +177,22 @@ li a:active { color: #99F; }
   visibility: hidden;
   line-height: 0;
   height: 0;
+}
+/* Footer */
+footer{
+  color: white;
+  background-color: black; 
+  padding: 40px 5px 45px 5px;
+  width: 960px;
+  margin: 0 auto;
+  border: 1px;
+}
+
+#working-bg {
+  background-image: url(coworking.jpg);
+  width: 960px;
+}
+
+.line-thru {
+  text-decoration: line-through;
 }

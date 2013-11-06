@@ -9,31 +9,56 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-     <div id="container">
+    <div id="container">
          <header>
           <h1>Start Matchmaker</h1>
           <nav>
-          <ul>
-            <li><a href="#">FIND DVELOPERS</a></li>
-            <li><a href="#">FIND DESIGNERS</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
+            <a href="#">FIND DEVELOPERS</a> <a href="#">FIND DESIGNERS</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
         </nav>
         </header>
-      <div class="punchline" >
-        <p>Because two brains taste are better than one.</p>
+    <div class="punchline" >
+        <p>Because two brains <span class="line-thru">taste</span> <em>are</em> better than one.</p>
       </div>
-      <div id="bannerimage">
-        <img src="coworking.jpg" width="500px" alt="coworking geeks">
-      </div>
-      <div id="wrapper" class="clearfix">
-        <div id="column1">heyhey</div>
-        <div id="column2">yomama</div>
-        <div id="column3">Kroketten!</div>
+    <div id="imagebox" class="clearfix">  
+        <div class="bannerimage">
+          <!-- <img src="coworking.jpg"  alt="coworking geeks"> -->
+          <div id="working-bg" class="clearfix">
+            <div class="transbox" >
+              <h1> Meet your Match!</h1>
+              <h2>Have a great idea for a product, but need help maing it a reality? We're here to help. Startup Matchmaker is the best place for designers and developers to find each other.</h2>
+              <h3>CREATE A PROFILE</h3>
+            </div>
+          </div>
+     </div>  
+
+        </div>
+        
+    <div id="wrapper" class="clearfix">
+          <div class="column1">
+          <h2>Create a Profile</h2>
+          <h3>Are you a Designer? Developer? Put yourself out there so that others can find you!</h3>
+          <h4>START YOUR SEARCH</h4>
+          <p>
+          <button type="button" onclick="myFunction()">SIGN UP NOW</button></p>
+          <ul id="switcher">
+          <li id="signupnow"></li>
+          </ul id="switcher">
+        </div>        
+          <div class="column2">
+          <h2>Find a Developer</h2>
+          <h3>Looking for a fantastic developer to work with on the next big thing? Look no further</h3>
+          <h4>START YOUR SEARCH</h4>
+        </div>
+          <div class="column3">
+          <h2>Find a UX Designer</h2>
+          <h3>Need someone who can make a product intuitive and appealing? Get ready.</h3>
+          <h4>START YOUR SEARCH</h4></div>
+        </div>
       </div>		
-			<footer>
-				&copy; 2013 Starup MatchMaker. Made in NY; 
+		  <footer>
+				&copy; 2013 Starup MatchMaker. Made in NY. 
 			</footer>
 		</div><!-- #container --> 
   </body>
