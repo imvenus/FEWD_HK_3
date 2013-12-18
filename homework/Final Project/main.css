@@ -1,0 +1,69 @@
+/* 
+Project Name: Final Project
+Client: Planet Planet Venus
+Author: Venus GA
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+     background: #000;
+     height: 80px; 
+     color:#ccc;
+     font-size:17px; 
+}
+
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+nav ul li {
+     float:left;
+     list-style: none;
+}
+
+     nav ul li a {
+          display:block;
+          height: 49px;
+          color:#ccc;
+          padding: 30px 18px 0 18px;
+          text-decoration: none;
+     }
+
+     nav ul li a:hover {
+          background:url(..) repeat-x;
+          color:#FFF;
+     }
